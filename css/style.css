@@ -5,7 +5,8 @@
 
 .nav-link{
 
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 
@@ -22,8 +23,8 @@
 
 svg{
 
-  width: 2000px;
-
+  width: 1700px;
+  z-index: 2000;
 }
 
 .accueil{
@@ -113,7 +114,7 @@ svg{
 
 #machine{
   
-            animation: machine  3s infinite ease alternate;
+            animation: machine  4s  ease alternate;
             transform-box: fill-box;
             transform-origin: left;
           }
@@ -163,7 +164,7 @@ svg{
 
   .btn{
 
-    margin: 40px;
+    margin-top: 40px;
     background: linear-gradient(to left, #5c89bd, #336792);
     border: none; 
     color: white;
