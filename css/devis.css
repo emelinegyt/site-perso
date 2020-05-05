@@ -1,0 +1,79 @@
+html{
+
+    scroll-behavior: smooth;
+    box-sizing: 0 !important;
+    padding: 0 !important; 
+    margin: 0 !important;
+  
+  }
+
+
+
+  p, h1, h2, h3, li{
+
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar {
+ 
+    background:transparent;
+    width: 100%;
+  
+  }
+    
+  .navbar .nav-item {
+      font-size: 1.4rem;
+      padding-right: 1.4rem; }
+  
+.nav-link{
+
+        font-size: 15px;
+      }
+      
+  
+  .header__menu ul li.active a::after {
+        opacity: 1;
+        height: 50%;
+  }
+  #main-nav ul li::after{
+  
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: 100%;
+        background: violet;
+        content: "";
+        z-index: -1;
+        transition: all .3s;
+      }
+
+#services{
+
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url(../img/fond-services.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      
+#chauffage{
+
+  background-image: url(../img/séparateur\ chauffage.png);
+  background-size: cover;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+
+  .illustration{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+}

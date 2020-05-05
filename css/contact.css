@@ -1,0 +1,49 @@
+html{
+
+  scroll-behavior: smooth;
+  box-sizing: 0 !important;
+  padding: 0 !important; 
+  margin: 0 !important;
+
+}
+.navbar {
+ 
+  background:transparent;
+
+}
+  
+.navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+
+.header__menu ul li.active a::after {
+      opacity: 1;
+      height: 50%;
+}
+#main-nav ul li::after{
+
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      width: 100%;
+      background: violet;
+      content: "";
+      z-index: -1;
+      transition: all .3s;
+    }
+
+h5{
+
+  font-size: 17px;
+}
+
+.nav-link{
+
+  font-size: 15px;
+}
+
+p, h1, h2, h3, li{
+
+  font-family: 'Open Sans', sans-serif;
+}
