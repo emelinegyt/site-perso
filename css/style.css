@@ -155,6 +155,7 @@
   .card, .btn{
     border: 2px solid rgb(255, 255, 255);
     border-radius:30px;
+    transition: 1.3s;
   }
 
   .btn{
