@@ -21,18 +21,14 @@
   background-repeat: no-repeat;
 }
 
-svg{
-
-  width: 1700px;
-  z-index: 2000;
-}
 
 .accueil{
 
   height: 75vh;
-
-
 }
+.svg-box{
+
+
 /*------ANIMATION----------*/
 
   #goute1{
