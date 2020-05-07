@@ -51,28 +51,28 @@ li a:hover:after {
 
 /*------ANIMATION----------*/
 
-  #goute1{
+  #goute{
   
-      animation: goute1 ease 2s infinite;
+      animation: goute ease 2s infinite ease;
       transform-box: fill-box;
   
   }
 
-  @keyframes goute1{
+  @keyframes goute{
   
       from{
           opacity: 1;
           transform: translateY(-10%);
       
       }to{
-          transform: translateY(80%);
+          transform: translateY(90%);
           opacity: 0.7;
       }
   }
   
   #goute4{
   
-      animation: goute4  2.5s infinite;
+      animation: goute4  2.5s infinite ease;
       transform-box: fill-box;
       transform-origin: bottom;
   }
@@ -84,14 +84,14 @@ li a:hover:after {
               transform: translateY(-10%);
           
           }to{
-            transform: translateY(70%);
+            transform: translateY(90%);
               opacity: 1;
           }
       }
   
       #goute3{
   
-        animation: goute3  1s infinite;
+        animation: goute3  1s infinite ease;
         transform-box: fill-box;
         transform-origin: bottom;
     }
@@ -103,7 +103,7 @@ li a:hover:after {
                 transform: translateY(-20%);
             
             }to{
-              transform: translateY(70%);
+              transform: translateY(90%);
                 opacity: 1;
             }
         }
@@ -111,7 +111,7 @@ li a:hover:after {
 
  #goute2{
   
-          animation: goute2  2s infinite;
+          animation: goute2  2s infinite ease;
           transform-box: fill-box;
           transform-origin: bottom;
       }
@@ -123,29 +123,12 @@ li a:hover:after {
                   transform: translateY(-20%);
               
               }to{
-                transform: translateY(70%);
+                transform: translateY(90%);
                   opacity: 1;
               }
           }
 
-#machine{
-  
-            animation: machine  4s  ease alternate;
-            transform-box: fill-box;
-            transform-origin: left;
-          }
-          
-            @keyframes machine{
-          
-                from{
-                    opacity: 1;
-                    transform: rotate(0deg);
-                
-                }to{
-                  transform: rotate(360deg);
-                    opacity: 1;
-                }
-            }
+
 
 #bras{
   
@@ -166,7 +149,65 @@ li a:hover:after {
                   }
               }
 
+#gant-jaune{
+  
+                animation: gant-jaune 2s infinite ease alternate;
+                transform-box: fill-box;
+                transform-origin: right;
+              }
+              
+                @keyframes gant-jaune{
+              
+                    from{
+                        opacity: 1;
+                        transform: rotate(0deg);
+                    
+                    }to{
+                      transform: rotate(20deg);
+                        opacity: 1;
+                    }
+                }
+@keyframes machine {
+                  0% {
+                    -webkit-transform: translateX(0) translateZ(0) rotateY(0);
+                            transform: translateX(0) translateZ(0) rotateY(0);
+                    -webkit-transform-origin: 100% 50%;
+                            transform-origin: 100% 50%;
+                  }
+                  100% {
+                    -webkit-transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+                            transform: translateX(100%) translateZ(160px) rotateY(-180deg);
+                    -webkit-transform-origin: 0% 50%;
+                            transform-origin: 0% 50%;
+                  }
+                }
 
+                #picto {
+                  -webkit-animation: picto 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	                animation: picto 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        
+                }
+@keyframes picto{
+
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-90px);
+  }
+}
+@keyframes picto {
+  0% {
+    -webkit-transform: translateY(-10);
+            transform: translateY(-10);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
 
 
   #bouton{
@@ -182,6 +223,25 @@ li a:hover:after {
 
         }
     
+}
+
+#flaque-eau{
+  
+  animation: flaque-eau ease 3s infinite alternate;
+  transform-box: fill-box;
+
+}
+
+@keyframes flaque-eau{
+
+  from{
+      opacity: 1;
+      transform: scale(1.2);
+  
+  }to{
+      transform: scale(1.5);
+      opacity: 0.7;
+  }
 }
 
 
@@ -204,18 +264,16 @@ li a:hover:after {
                       }
                   }
 
-#vecteur_3 {
-                    animation: vecteur_3 1s; /* je vais suivre l'animation "move" durant 1s */
-                    color: yellowgreen;
+
+  #tuyau-bleu, #tuyau-rouge {
+                    stroke-dasharray: 1070;
+                    stroke-dashoffset: 1000;
+                    animation: dash 5s linear forwards;
                   }
                   
-                  @keyframes vecteur_3 {
-                    0% { 
-                      offset-distance: 0%; /* je commence au début du trajet */
-                     
-                    }
-                    100% { 
-                      offset-distance: 100%; /* je finis à la fin du trajet */
+                  @keyframes dash {
+                    to {
+                      stroke-dashoffset: 0;
                     }
                   }
 /*------FIN ANIMATION----------*/
