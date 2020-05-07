@@ -147,7 +147,7 @@ li a:hover:after {
                 }
             }
 
-#mains{
+#bras{
   
               animation: mains 2s infinite ease alternate;
               transform-box: fill-box;
@@ -166,6 +166,58 @@ li a:hover:after {
                   }
               }
 
+
+
+
+  #bouton{
+
+    animation: bouton 3s ease infinite alternate;
+}
+
+@keyframes bouton{
+
+    from{
+        fill: rgb(231, 31, 31);
+    }to{fill: rgb(103, 189, 63);
+
+        }
+    
+}
+
+
+#bras-homme{
+  
+                  animation: bras-homme 2s infinite ease alternate;
+                  transform-box: fill-box;
+                  transform-origin: top;
+                }
+                
+                  @keyframes bras-homme{
+                
+                      from{
+                          opacity: 1;
+                          transform: rotate(-10deg);
+                      
+                      }to{
+                        transform: rotate(-20deg);
+                          opacity: 1;
+                      }
+                  }
+
+#vecteur_3 {
+                    animation: vecteur_3 1s; /* je vais suivre l'animation "move" durant 1s */
+                    color: yellowgreen;
+                  }
+                  
+                  @keyframes vecteur_3 {
+                    0% { 
+                      offset-distance: 0%; /* je commence au début du trajet */
+                     
+                    }
+                    100% { 
+                      offset-distance: 100%; /* je finis à la fin du trajet */
+                    }
+                  }
 /*------FIN ANIMATION----------*/
 
   p, h1, h2, h3, li{
