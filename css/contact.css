@@ -43,6 +43,24 @@ h5{
   font-size: 15px;
 }
 
+
+li a:after {
+  content: '';
+  display: block;
+  margin-top: -10px;
+  height: 15px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, #418ebb .5s ease;
+  transition: 0.5s;
+}
+li a:hover:after {
+  width: 100%;
+  background: rgb(74, 157, 206);
+  transition: 0.5s;
+}
+
+
 p, h1, h2, h3, li{
 
   font-family: 'Open Sans', sans-serif;

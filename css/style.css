@@ -27,7 +27,7 @@ li a:after {
 }
 li a:hover:after {
     width: 100%;
-    background: rgb(58, 129, 170);
+    background: rgb(74, 157, 206);
     transition: 0.5s;
 }
 
