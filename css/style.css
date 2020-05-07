@@ -14,11 +14,21 @@ html{
   font-weight: 600;
 }
 
-.nav-link:hover{
 
-  font-size: 16px;
-  font-weight: 600;
-  color: #04befe;
+li a:after {
+    content: '';
+    display: block;
+    margin-top: -10px;
+    height: 15px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, #418ebb .5s ease;
+    transition: 0.5s;
+}
+li a:hover:after {
+    width: 100%;
+    background: rgb(58, 129, 170);
+    transition: 0.5s;
 }
 
 #showcase{
@@ -202,8 +212,8 @@ html{
 
 
 .btn-hover.color-3 {
-  background-image: linear-gradient(to right, #667eea, #8a6da7, #6B8DD6, #8E37D7);
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  background-image: linear-gradient(to right, #69a6d8, #7d7ed3, rgb(122, 182, 231), rgb(61, 109, 212));
+  box-shadow: 0 4px 15px 0 rgba(119, 120, 196, 0.75);
 }
 
 @media screen and (min-width:1200px){
